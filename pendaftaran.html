@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.css"  media="screen,projection"/>
+    <!--Include custome.css-->
+    <link type="text/css" rel="stylesheet" href="css/custom.css"  media="screen,projection"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body style="background-image: url('img/background.jpg')">
+
+    <header id="user-panel">
+      <nav id="nav-login">
+        <div class="nav-wrapper indigo">
+          <div class="container ">
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#!">Beranda</a></li>
+              <li><a href="#!">Kontak Kami</a></li>
+              <li><a class="dropdown-button" href="#!" data-activates="dropdown"><i class="material-icons right">arrow_drop_down</i>Raden Muhamad Firzatullah</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Dropdown Structure -->
+    <ul id="dropdown" class="dropdown-content">
+      <li><a href="#!">Ubah Password</a></li>
+      <li><a href="#!">Logout</a></li>
+    </ul>
+
+    <div>
+      <ul id="slide-out" class="side-nav fixed">
+        <div id="logo">
+          <center><img height="150px" src="img/logo.png"></center>
+        </div>
+        <li class="bold"><a href="#!" class="waves-effect waves-teal"><i class="material-icons">add</i>Pendaftaran Paspor</a></li>
+        <li class="bold"><a href="#!" class="waves-effect waves-teal"><i class="material-icons">edit</i>Perbarui Data</a></li>
+        <li class="bold"><a href="#!" class="waves-effect waves-teal"><i class="material-icons">insert_drive_file</i>Berkas Pendukung</a></li>
+      </ul>
+    </div>
+
+    <main id="user-panel">
+
+      <div class="row">
+        <div class="col s12">
+          <div class="card">
+            <div class="card-content">
+              <span class="card-title"><strong>Jenis Permohonan</strong></span>
+              <div class="row">
+                <form class="col s12" action="#">
+                  <div class="row">
+                    <div class="col s12">
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test1" />
+                        <label for="test1">Paspor baru (Belum pernah memiliki paspor)</label>
+                      </p>
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test2" />
+                        <label for="test2">Penggantian paspor habis berlaku/ lebih awal</label>
+                      </p>
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test3"  />
+                        <label for="test3">Penggantian paspor alasan hilang/ rusak</label>
+                      </p>
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test4"/>
+                        <label for="test4">Penggantian paspor alasan penuh</label>
+                      </p>
+                      <p>
+                        <input class="with-gap" name="group1" type="radio" id="test5" />
+                        <label for="test5">Surat Perjalanan Laksana Paspor/ SPLP</label>
+                      </p>
+                    </div>
+                  </div>
+                  <a class="waves-effect waves-light btn indigo darken-4 right">Lanjut</a>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col s12">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title"><strong>Data Pribadi</strong></span>
+                <div class="row">
+                  <form class="col s12">
+                    <div class="row">
+                      <div class="input-field col l6 m12 s12">
+                        <input id="nama_lengkap" type="text" class="validate">
+                        <label for="nama_lengkap">Nama Lengkap</label>
+                      </div>
+                      <div class="input-field col l6 m12 s12">
+                        <input id="nama_lain" type="text" class="validate">
+                        <label for="nama_lain">Nama Lain/ Alias</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col l6 m12 s12">
+                        <select>
+                          <option value="" disabled selected>Jenis Kelamin</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                        </select>
+                        <label for="jenis_kelamin">Jenis Kelamin</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col l6 m12 s12">
+                        <select>
+                          <option value="" disabled selected>Negara</option>
+                          <option value="1">Option 1</option>
+                          <option value="2">Option 2</option>
+                        </select>
+                        <label for="negara">Negara</label>
+                      </div>
+                      <div class="input-field col l6 m12 s12">
+                        <input type="text" class="datepicker">
+                        <label for="negara">Tanggal Lahir</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <textarea id="alamat" class="materialize-textarea" data-length="120"></textarea>
+                        <label for="alamat">Alamat</label>
+                      </div>
+                    </div>
+                  <a class="waves-effect waves-light btn indigo lighten-1">Kembali</a>
+                  <a class="waves-effect waves-light btn indigo darken-4 right">Lanjut</a>
+                </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+      </div>
+    </main>
+
+    <footer id="user-panel" class="page-footer indigo darken-1">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Kontak Kami</h5>
+            <p class="grey-text text-lighten-4">Jl. H. R. Rasuna Said Kav.X-6 Nomor 8, Kuningan-Jakarta Selatan</p>
+            <ul>
+              <li>Call Center : (021) 5225029/ 5225028</li>
+              <li>Telefax : -</li>
+              <li>SMS Center : -</li>
+              <li>Email : humas@imigrasi.go.id / www.lapor.go.id</li>
+            </ul>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h5 class="white-text">Layanan Publik</h5>
+            <ul>
+              <li><a class="grey-text text-lighten-3" href="#!">Direktorat Jendral Imigrasi</a></li>
+              <li><a class="grey-text text-lighten-3" href="#!">Kementerian Hukum dan HAM</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container center">
+        © 2017 Direktorat Jendral Imigrasi
+        </div>
+      </div>
+    </footer>
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $('select').material_select();
+        $('.datepicker').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 15, // Creates a dropdown of 15 years to control year,
+          today: 'Today',
+          clear: 'Clear',
+          close: 'Ok',
+          closeOnSelect: false // Close upon selecting a date,
+        });
+      });
+    </script>
+  </body>
+</html>
